@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  devalkoradiya-www:
+    image: node:24-alpine
+    container_name: devalkoradiya-www
+    restart: always
+    command: sleep infinity
+    stdin_open: true
+    tty: true
+
+    working_dir: /app
+    
+    volumes:
+      - /devDisk/devalkoradiya/nodeApp/www:/app
+
+    networks:
+      devNetwork:
+        ipv4_address: 172.20.0.18
+
+networks:
+  devNetwork:
+    external: true
+
+# docker compose -p devalkoradiya -f compose.www.yml up -d --build  
