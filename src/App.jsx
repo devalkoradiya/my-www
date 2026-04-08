@@ -50,6 +50,15 @@ const detailedSkills = [
     ],
   },
   {
+    title: "VOIP and Telephony",
+    points: [
+      "VOIP, SIP trunk, and telephony workflow understanding",
+      "Business call routing and voice-system thinking",
+      "AI voice flow support for practical operations",
+      "Useful for communication-heavy and branch-based setups",
+    ],
+  },
+  {
     title: "Automation",
     points: [
       "Telephony, AI voice, and process automation",
